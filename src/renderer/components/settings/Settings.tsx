@@ -130,7 +130,7 @@ const SettingsOptions: Record<string, Array<BooleanSetting | SettingsComponent>>
             key: "splashDetailed",
             title: "Show detailed process in splash",
             description: "Splash redesign with additional information while Equicord loads",
-            defaultValue: false
+            defaultValue: true
         }
     ],
     "Custom Splash Animation": [CustomSplashAnimation],
