@@ -64,11 +64,6 @@
 
         "path-alias/no-relative": "error",
 
-        "prettier/prettier": [
-            "error",
-            {
-                "endOfLine": "auto"
-            }
-        ]
+        "prettier/prettier": "error"
     }
 }
