@@ -127,9 +127,9 @@ const SettingsOptions: Record<string, Array<BooleanSetting | SettingsComponent>>
         },
 
         {
-            key: "splashDetailed",
-            title: "Show detailed process in splash",
-            description: "Splash redesign with additional information while Equicord loads",
+            key: "splashProgress",
+            title: "Show progress bar in Splash",
+            description: "Adds a fancy progress bar to the splash window",
             defaultValue: true
         }
     ],
