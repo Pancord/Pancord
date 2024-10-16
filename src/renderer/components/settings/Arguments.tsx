@@ -1,9 +1,15 @@
+/*
+ * SPDX-License-Identifier: GPL-3.0
+ * Vesktop, a desktop app aiming to give you a snappier Discord Experience
+ * Copyright (c) 2023 Vendicated and Vencord contributors
+ */
+
 import { Margins, Modals, ModalSize, openModal } from "@vencord/types/utils";
-import { Forms, Button, TextInput } from "@vencord/types/webpack/common";
-import { SettingsComponent } from "./Settings";
+import { Button, Forms, TextInput } from "@vencord/types/webpack/common";
 import { useSettings } from "renderer/settings";
-import { Settings } from "shared/settings";
 import { isLinux } from "renderer/utils";
+
+import { SettingsComponent } from "./Settings";
 
 export const Arguments: SettingsComponent = ({ settings }) => {
     if (!isLinux) return null;
@@ -23,19 +29,22 @@ export const Arguments: SettingsComponent = ({ settings }) => {
                     <TextInput
                         type="text"
                         defaultValue={Arguments}
-                        onChange={value => Arguments = value}
+                        onChange={value => (Arguments = value)}
                         placeholder="--ozone-platform=auto"
                     />
                 </Modals.ModalContent>
                 <Modals.ModalFooter>
                     <Button onClick={props.onClose}>Close</Button>
                     <Button
-                        style={{ marginRight: '10px' }}
+                        style={{ marginRight: "10px" }}
                         color={Button.Colors.RED}
                         onClick={() => {
                             settingsStore.arguments = Arguments;
                             props.onClose();
-                        }}>Save</Button>
+                        }}
+                    >
+                        Save
+                    </Button>
                 </Modals.ModalFooter>
             </Modals.ModalRoot>
         ));
