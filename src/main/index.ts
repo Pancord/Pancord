@@ -61,7 +61,7 @@ function init() {
 
     if (additionalArgs && Array.isArray(additionalArgs)) {
         additionalArgs.forEach(arg => {
-            const [switchName, switchValue] = arg.split('=');
+            const [switchName, switchValue] = arg.split("=");
             app.commandLine.appendSwitch(switchName, switchValue);
         });
     }
