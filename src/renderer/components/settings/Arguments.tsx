@@ -34,9 +34,8 @@ export const Arguments: SettingsComponent = ({ settings }) => {
                     />
                 </Modals.ModalContent>
                 <Modals.ModalFooter>
-                    <Button onClick={props.onClose}>Close</Button>
                     <Button
-                        style={{ marginRight: "10px" }}
+                        style={{ marginLeft: "10px" }}
                         color={Button.Colors.RED}
                         onClick={() => {
                             settingsStore.arguments = Arguments;
@@ -45,6 +44,7 @@ export const Arguments: SettingsComponent = ({ settings }) => {
                     >
                         Save
                     </Button>
+                    <Button onClick={props.onClose}>Close</Button>
                 </Modals.ModalFooter>
             </Modals.ModalRoot>
         ));
