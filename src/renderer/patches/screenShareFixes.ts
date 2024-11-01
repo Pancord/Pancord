@@ -51,17 +51,24 @@ if (isLinux) {
             .catch(e => logger.error("Failed to apply constraints.", e));
 
         if (id) {
-            const audio = await navigator.mediaDevices.getUserMedia({
-                audio: {
-                    deviceId: {
-                        exact: id
-                    },
-                    autoGainControl: false,
-                    echoCancellation: false,
-                    noiseSuppression: false
-                }
-            });
-            audio.getAudioTracks().forEach(t => stream.addTrack(t));
+            try {
+                const audio = await navigator.mediaDevices.getUserMedia({
+                    audio: {
+                        deviceId: {
+                            exact: id
+                        },
+                        autoGainControl: false,
+                        echoCancellation: false,
+                        noiseSuppression: false
+                    }
+                });
+                audio.getAudioTracks().forEach(t => {
+                    stream.addTrack(t);
+                    logger.info("Added audio track to stream");
+                });
+            } catch (error) {
+                logger.error("Failed to add audio track to stream", error);
+            }
         }
 
         return stream;
