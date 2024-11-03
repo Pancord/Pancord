@@ -7,13 +7,10 @@
 import { Margins, Modals, ModalSize, openModal } from "@vencord/types/utils";
 import { Button, Forms, TextInput } from "@vencord/types/webpack/common";
 import { useSettings } from "renderer/settings";
-import { isLinux } from "renderer/utils";
 
 import { SettingsComponent } from "./Settings";
 
 export const Arguments: SettingsComponent = ({ settings }) => {
-    if (!isLinux) return null;
-
     const settingsStore = useSettings();
 
     const openTextModal = () => {
