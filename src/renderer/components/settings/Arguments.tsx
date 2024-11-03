@@ -27,7 +27,7 @@ export const Arguments: SettingsComponent = ({ settings }) => {
                         type="text"
                         defaultValue={Arguments}
                         onChange={value => (Arguments = value)}
-                        placeholder="--ozone-platform=auto"
+                        placeholder="--force_high_performance_gpu"
                     />
                 </Modals.ModalContent>
                 <Modals.ModalFooter>
