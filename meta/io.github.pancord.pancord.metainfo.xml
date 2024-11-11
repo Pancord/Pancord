@@ -28,10 +28,6 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="v1.0.0" date="2024-11-07" type="stable">
-      <url>https://github.com/Pancord/Pancord/releases/tag/v1.0.0</url>
-      <description/>
-    </release>
   </releases>
   <url type="homepage">https://github.com/Pancord/Pancord</url>
   <url type="bugtracker">https://github.com/Pancord/Pancord/issues</url>
