@@ -34,7 +34,7 @@ function loadSettings<T extends object = any>(file: string, name: string) {
     return store;
 }
 
-export const Settings = loadSettings<TSettings>(SETTINGS_FILE, "Equibop settings");
+export const Settings = loadSettings<TSettings>(SETTINGS_FILE, "Pancord settings");
 
 export const VencordSettings = loadSettings<any>(VENCORD_SETTINGS_FILE, "Equicord settings");
 
@@ -49,4 +49,4 @@ if (Object.hasOwn(Settings.plain, "firstLaunch") && !existsSync(STATE_FILE)) {
     writeFileSync(STATE_FILE, JSON.stringify(state, null, 4));
 }
 
-export const State = loadSettings<TState>(STATE_FILE, "Equibop state");
+export const State = loadSettings<TState>(STATE_FILE, "Pancord state");

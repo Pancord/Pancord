@@ -28,7 +28,7 @@ interface Data {
 
 export function createFirstLaunchTour() {
     if (process.platform === "darwin") {
-        exec(`codesign --force --deep --sign - /Applications/Equibop.app`, error => {
+        exec(`codesign --force --deep --sign - /Applications/Pancord.app`, error => {
             if (error) return;
         });
     }

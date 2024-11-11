@@ -1,12 +1,9 @@
-# Equibop [<img src="/static/icon.png" width="225" align="right" alt="Equibop">](https://github.com/Equicord/Equibop)
+# Pancord [<img src="/static/icon.png" width="225" align="right" alt="Pancord">](https://github.com/Pancord/Pancord)
 
 [![Equicord](https://img.shields.io/badge/Equicord-grey?style=flat)](https://github.com/Equicord/Equicord)
-[![Tests](https://github.com/Equicord/Equibop/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/Equicord/Equibop/actions/workflows/test.yml)
-[![Discord](https://img.shields.io/discord/1207691698386501634.svg?color=768AD4&label=Discord&logo=discord&logoColor=white)](https://discord.gg/5Xh2W87egW)
+[![Tests](https://github.com/Pancord/Pancord/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/Pancord/Pancord/actions/workflows/test.yml)
 
-Equibop is a fork of [Vesktop](https://github.com/Vencord/Vesktop).
-
-You can join our [discord server](https://discord.gg/5Xh2W87egW) for commits, changes, chat or even support.<br></br>
+Pancord is a fork of [Equibop](https://github.com/Equicord/Equibop).
 
 ## Main features
 

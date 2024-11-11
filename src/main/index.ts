@@ -94,7 +94,7 @@ function init() {
     });
 
     app.whenReady().then(async () => {
-        if (process.platform === "win32") app.setAppUserModelId("io.github.equicord.equibop");
+        if (process.platform === "win32") app.setAppUserModelId("io.github.pancord.pancord");
 
         createSplashWindow();
         addSplashLog();
@@ -120,10 +120,10 @@ function init() {
 
 if (!app.requestSingleInstanceLock({ IS_DEV })) {
     if (IS_DEV) {
-        console.log("Equibop is already running. Quitting previous instance...");
+        console.log("Pancord is already running. Quitting previous instance...");
         init();
     } else {
-        console.log("Equibop is already running. Quitting...");
+        console.log("Pancord is already running. Quitting...");
         app.quit();
     }
 } else {
