@@ -76,7 +76,7 @@
         ],
         "beforePack": "scripts/build/sandboxFix.js",
         "linux": {
-            "icon": "build/icon.icns",
+            "icon": "build/icon.png",
             "category": "Network",
             "maintainer": "pancakseyt@gmail.com",
             "target": [
@@ -129,7 +129,7 @@
             }
         },
         "dmg": {
-            "icon": "build/icon.icns",
+            "icon": "build/icon.png",
             "iconSize": 105,
             "window": {
                 "width": 512,
